@@ -1,0 +1,72 @@
+﻿@model IEnumerable<WebSiteBookTimeMVC.Models.Book>
+@{
+    ViewData["Title"] = "AddCart";
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="~/css/bootstrap.css" rel="stylesheet" />
+<link href="~/css/flexslider.css" rel="stylesheet" />
+<link href="~/css/font-awesome.min.css" rel="stylesheet" />
+<link href="~/css/jquery-ui1.css" rel="stylesheet" />
+<link href="~/css/shop.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />
+<link href="~/css/style.css" rel="stylesheet" />
+<link href="~/css/swipebox.css" rel="stylesheet" />
+<link href="~/css/jquery-ui1 - Copier.css" rel="stylesheet" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="banner"></div>
+<div class="container">
+    <table id="cart" class="table table-hover table-condensed">
+        <thead>
+            <tr>
+                <th style="width:50%">Product</th>
+                <th style="width:10%">Price</th>
+                <th style="width:8%">Quantity</th>
+                <th style="width:22%" class="text-center">Subtotal</th>
+                <th style="width:10%"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var itmes in Model)
+            {
+                <tr>
+                    <td data-th="Product">
+                        <div class="row">
+                            <div class="col-sm-2 hidden-xs"><img src="~/images/@Html.DisplayFor(model => itmes.Image)" alt="..." class="img-responsive" /></div>
+                            <div class="col-sm-10">
+                                <h4 class="nomargin">@Html.DisplayFor(model => itmes.Name)</h4>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-th="Price">@Html.DisplayFor(model => itmes.Price)</td>
+                    <td data-th="Quantity">
+                        <input type="number" class="form-control text-center" value="1">
+                    </td>
+                    <td data-th="Subtotal" class="text-center">@Html.DisplayFor(model => itmes.Price)</td>
+                    <td class="actions" data-th="">
+                        <button class="btn btn-info btn-sm" ><i class="fa fa-refresh"></i></button>
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+        <tfoot>
+            <tr class="visible-xs">
+                <td class="text-center"><strong>Total 1.99</strong></td>
+            </tr>
+            <tr>
+                <td><a asp-action="AllBook" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+                <td colspan="2" class="hidden-xs"></td>
+                <td class="hidden-xs text-center"><strong>Total $1.99</strong></td>
+                <td><a asp-action="PayBook" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+

@@ -1,0 +1,256 @@
+﻿
+@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="slider">
+    <div class="callbacks_container">
+        <ul class="rslides" id="slider3">
+            <li>
+                <div class="slider-img1">
+                    <div class="container">
+                        <div class="slider_banner_info_w3ls">
+                            <h4> Book & You  <span>Learn</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="slider-img2">
+                    <div class="container">
+                        <div class="slider_banner_info_w3ls">
+                            <h4>Book & You   <span>Learn</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="slider-img3">
+                    <div class="container">
+                        <div class="slider_banner_info_w3ls">
+                            <h4>Book & You  <span>Learn</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<div class="clearfix"> </div>
+<!--service-->
+<div class="w3-agile-services">
+    <div class="container">
+        <h3 class="title-txt"><span>C</span>ategory</h3>
+        <div class="agileits-services">
+            <div class="services-right-grids">
+                <div class="col-sm-4 services-right-grid">
+                    <div class="se-top">
+                        <div class="services-icon">
+                            <i class="fa fa-flask" aria-hidden="true"></i>
+                        </div>
+                        <div class="services-icon-info">
+                            <h5>@Html.ActionLink("SCIENCE", "ScienceBook", "MyTemplate")</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci enim, posuere sed tincidunt et, pellentesque eget mi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 services-right-grid">
+                    <div class="se-top">
+                        <div class="services-icon">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </div>
+                        <div class="services-icon-info">
+                            <h5>@Html.ActionLink("ART", "ArtBook", "MyTemplate")</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci enim, posuere sed tincidunt et, pellentesque eget mi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 services-right-grid">
+                    <div class="se-top">
+                        <div class="services-icon">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                        </div>
+                        <div class="services-icon-info">
+                            <h5>@Html.ActionLink("PHYLOSOFIE", "PhylosofiBook", "MyTemplate")</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed orci enim, posuere sed tincidunt et, pellentesque eget mi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- //services -->
+<!--bestbook-->
+<div class="events-section">
+    <div class="team">
+        <div class="container">
+            <h3 class="title-txt two"><span>B</span>ook Month's</h3>
+            <div class="row team-row">
+                <div class="col-md-3 col-sm-6 thumbnail team-w3agile">
+                    <img src="~/images/cd.jpg" class="img-responsive" alt="" style="width:350px;height:370px;">
+                    <div class="team-info">
+                        <div class="caption">
+                            <h4>Candide</h4>
+                            <p>15 $</p>
+                        </div>
+                        <div class="w3ls-social-icons">
+                            <a class="facebook" asp-action="ShowBook" asp-route-id="1"><span class="fa fa-eye"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 thumbnail team-w3agile">
+                    <img src="~/images/bm.jpg" class="img-responsive" alt="" style="width:350px;height:370px;">
+                    <div class="team-info">
+                        <div class="caption">
+                            <h4>Boite à Merveille</h4>
+                            <p>10 $</p>
+                        </div>
+                        <div class="w3ls-social-icons">
+                            <a class="facebook" asp-action="ShowBook" asp-route-id="2"><span class="fa fa-eye"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 thumbnail team-w3agile">
+                    <img src="images/cd.jpg" class="img-responsive" alt="" style="width:350px;height:370px;">
+                    <div class="team-info">
+                        <div class="caption">
+                            <h4>Adam Lobster</h4>
+                            <p>15 $</p>
+                        </div>
+                        <div class="w3ls-social-icons">
+                            <a class="facebook" asp-action="ShowBook" asp-route-id="3"><span class="fa fa-eye"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 thumbnail team-w3agile">
+                    <img src="images/bm.jpg" class="img-responsive" alt="" style="width:350px;height:370px;">
+                    <div class="team-info">
+                        <div class="caption">
+                            <h4>Christina </h4>
+                            <p>15 $</p>
+                        </div>
+                        <div class="w3ls-social-icons">
+                            <a class="facebook" asp-action="ShowBook" asp-route-id="4"><span class="fa fa-eye"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<!-- //bestbook -->
+<!-- Testimonials -->
+<div class="testimonials">
+    <div class="container">
+        <h3 class="title-txt"><span>B</span>est Book</h3>
+        <div class="col-md-6 testimonials-main" style="width:960px;padding-left:100px;">
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="inner-testimonials-w3ls">
+                                
+                                    <a asp-action="ShowBook" asp-route-id="1"><img src="~/images/cd.jpg" alt=" " class="img-responsive" /></a>
+                                    <div class="testimonial-info-wthree">
+                                        <h5>Power of Hapits</h5>
+                                        <span>writher name</span>
+                                        <p class="para-w3ls">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit lobortis elementum, Quis nostrum exercitationem
+                                            ullam corporis suscipit laboriosam.
+                                        </p>
+                                    </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner-testimonials-w3ls">
+
+                                <a asp-action="ShowBook" asp-route-id="1"><img src="~/images/cd.jpg" alt=" " class="img-responsive" /></a>
+                                <div class="testimonial-info-wthree">
+                                    <h5>Candid</h5>
+                                    <span>Voltaire</span>
+                                    <p class="para-w3ls">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit lobortis elementum, Quis nostrum exercitationem
+                                        ullam corporis suscipit laboriosam.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="inner-testimonials-w3ls">
+
+                                <a asp-action="ShowBook" asp-route-id="1"><<img src="~/images/bm.jpg" alt=" " class="img-responsive" /></a>
+                                <div class="testimonial-info-wthree">
+                                    <h5>Boite à Mervaille</h5>
+                                    <span>Ahmed Sefrioui</span>
+                                    <p class="para-w3ls">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit lobortis elementum, Quis nostrum exercitationem
+                                        ullam corporis suscipit laboriosam.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!-- //Testimonials -->
+<!--about-->
+<div class="about">
+    <div class="container">
+        <div class="about-main">
+            <div class="about-right">
+                <h3 class="subheading-w3-agile">About Us</h3>
+                <p class="para-w3-agileits">
+                    Books play a significant role in our life.They say that When you open a book, you open a new world,I believe that everyone would agree with this statement as books have become inevitable to mankind.
+                    For the majority of people, books are part of their everyday life,
+                    A book is like a best friend who will never walk away from you.So our Web Site BookTime Offer for you a lot of the Book in different Category.
+                </p>
+                <!-- stats -->
+                <div class="stats">
+                    <div class="stats_inner">
+                        <div class="col-md-6 col-sm-6 col-xs-6 stat-grids">
+                            <p class="counter-agileits-w3layouts">100</p>
+                            <div class="stats-text-wthree">
+                                <h3>BOOK</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 stat-grids">
+                            <p class="counter-agileits-w3layouts">6</p>
+                            <div class="stats-text-wthree">
+                                <h3>CATYGORY</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 stat-grids">
+                            <p class="counter-agileits-w3layouts">100</p>
+                            <div class="stats-text-wthree">
+                                <h3> PRICE</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 stat-grids">
+                            <p class="counter-agileits-w3layouts">45</p>
+                            <div class="stats-text-wthree">
+                                <h3>SRVICES</h3>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+                <!-- //stats -->
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--//about-->

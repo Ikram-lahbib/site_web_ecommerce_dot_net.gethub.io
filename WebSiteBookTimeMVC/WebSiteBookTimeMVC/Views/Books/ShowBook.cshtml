@@ -1,0 +1,47 @@
+﻿@model WebSiteBookTimeMVC.Models.Book
+
+@{
+    ViewData["Title"] = "ShowBook";
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="~/css/bootstrap.css" rel="stylesheet" />
+<link href="~/css/flexslider.css" rel="stylesheet" />
+<link href="~/css/font-awesome.min.css" rel="stylesheet" />
+<link href="~/css/jquery-ui1.css" rel="stylesheet" />
+<link href="~/css/shop.css" rel="stylesheet" />
+<link href="~/css/site.css" rel="stylesheet" />
+<link href="~/css/style.css" rel="stylesheet" />
+<link href="~/css/swipebox.css" rel="stylesheet" />
+<link href="~/css/jquery-ui1 - Copier.css" rel="stylesheet" />
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="testimonials">
+    <div class="container">
+        <h3 class="title-txt"><span>Y</span>our Book</h3>
+        <div class="col-md-6 testimonials-main" style="width:960px;padding-left:100px;">
+            <div class="flexslider">
+
+                <div class="inner-testimonials-w3ls">
+                    <img src="~/images/@Html.DisplayFor(model => model.Image)" alt=" " class="img-responsive" />
+                    <div class="testimonial-info-wthree" style="padding-top:20px;">
+                        <h5>Book Name </h5><samp>@Html.DisplayFor(model => model.Name)</samp>
+                        <h5>writher name </h5><span> @Html.DisplayFor(model => model.Writer)</span>
+                        <h5>Summary </h5>
+                        <p class="para-w3ls">
+                            @Html.DisplayFor(model => model.Summary)
+                        </p>
+                        <h5>Price </h5> <span>@Html.DisplayFor(model => model.Price) $</span>
+                        <h5>Catygory </h5> <span>@Html.DisplayFor(model => model.Caterory)</span>
+                        <h5>Stock </h5> <span>@Html.DisplayFor(model => model.Stock)</span>
+                        <button style="width:200px;height:40px;border:10px;color:white;background-color:#93c83f;"><a asp-action="AddCart" asp-route-id="@Model.Id" style="color:white;font-family:sans-serif;font-size:20px;">Add To Cart</a></button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
